@@ -8,7 +8,9 @@ public class Word {
     private String mMiwokTranslation;
 
     /** Image Resource ID for the word */
-    private int mImageResourceId;
+    private int mImageResourceId = NO_IMAGE_PROVIDED;
+
+    private static final int NO_IMAGE_PROVIDED = -1;
 
     /** Constructor (defaultTranslation, miworkTranslation) **/
     public Word(String defaultTranslation, String miwokTranslation) {
@@ -38,6 +40,10 @@ public class Word {
 
     public int getImageResourceId() {
         return mImageResourceId;
+    }
+
+    public boolean hasImage() {
+        return mImageResourceId != NO_IMAGE_PROVIDED;
     }
 
 }
