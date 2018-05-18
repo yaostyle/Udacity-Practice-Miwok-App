@@ -3,6 +3,8 @@ package com.example.android.miwok;
 import android.content.Context;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
+import android.support.annotation.Nullable;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +14,14 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 public class FamilyActivity extends AppCompatActivity {
+
+    @Nullable
+    @Override
+    public ActionBar getSupportActionBar() {
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        return super.getSupportActionBar();
+    }
+
     private MediaPlayer mMediaPlayer;
 
     private AudioManager mAudioManager;
