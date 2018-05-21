@@ -23,9 +23,8 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     testImplementation 'junit:junit:4.12'
     //noinspection GradleCompatible
-    implementation 'com.android.support:appcompat-v7:23.+'
-    implementation 'com.android.support:support-v4:23.3.0'
-    implementation 'com.android.support:design:23.3.0'
-    implementation 'com.android.support:support-v13:23.3.0'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:support-v4:23.3.0'
+    compile 'com.android.support:design:23.3.0'
 
 }
